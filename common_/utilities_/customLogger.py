@@ -14,6 +14,7 @@ def get_root_dir_name():
             command += ".parent"
 
 
+
 def logger(level, message, fileName=os.path.join(get_root_dir_name(), '_logs_', f'log_{date.today()}.log')):
     logging.basicConfig(level=logging.INFO, filename=fileName, filemode="a",
                         format="%(asctime)-12s %(levelname)s %(message)s",
